@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5</title>
+    <style>
+        dialog{
+            background-color: grey;
+            color: lightgray;
+            padding: 20px;
+            border: 2px solid #000;
+            
+            margin: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>DETAILS TAG..</h3>
+        <p>This tag is used to specifies the additional details on the webpage that the user can view or hide on demand.</p>
+    </center>
+    <hr>
+    <center>
+        <h3>This is summary tag</h3>
+        <p>the HTML SUMMARY TAG is used with DETAILS tag, it is used as a summary, caption or legend for the content of a details element,</p>
+    </center>
+    <hr>
+
+    <details>
+        <summary>HTML</summary>
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt aliquam accusamus hic aliquid minima dolor ea iure non reiciendis soluta ipsa qui eius dicta, ab nam. Amet dolorum vero deserunt.</p>
+
+    </details>
+    <details>
+        <summary>css</summary>
+        <h1>css</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus atque consectetur dolores tempore quaerat nostrum placeat aliquam. Commodi itaque inventore libero officiis iusto, ducimus similique necessitatibus deserunt repellendus consequuntur cum.</p>
+    </details>
+    <details>
+        <summary>js</summary>
+        <h1>js</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus atque consectetur dolores tempore quaerat nostrum placeat aliquam. Commodi itaque inventore libero officiis iusto, ducimus similique necessitatibus deserunt repellendus consequuntur cum.</p>
+    </details>
+    <hr>
+    <center>
+        <h3>TIME TAG..</h3>
+        <p>HTML Time tag is used to define the date and time, it displays time value in a 24 hour class or a precise date in a Gregorian calender in HTML</p>
+    </center>
+    <hr>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque tenetur ducimus nobis tempora itaque quisquam sequi quibusdam voluptatem ipsa ex temporibus optio 2:00 pm sint explicabo minima qui maiores iste, eos quia.</p>
+    <br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa nihil doloribus tempore autem est explicabo, ducimus error. Cum voluptatum beatae <time>2:00 pm</time> dolorem similique exercitationem, eaque minus dolor quo possimus, itaque sint!</p>
+    <hr>
+    <dialog id="dd">
+        <button type="button" id="btn2">&times;</button>
+ 
+        <h1>FULLSTACK</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sed corrupti cupiditate eaque, aliquid at mollitia unde facilis, ducimus obcaecati dolore modi? Beatae cupiditate, optio iste quam ea labore cum.
+        Perferendis molestiae tempore illum excepturi eos, cum quia repellendus repellat repudiandae ipsa amet minima placeat ipsam earum corporis, non animi sunt commodi necessitatibus. Laudantium ratione ut dolorum odio maiores necessitatibus.</p>
+    </dialog>
+
+    <button id="btn1">Open Dialog</button>
+
+    <script>
+        document.getElementById("btn1").onclick = function(){
+            document.getElementById("dd").show();
+        }
+    </script>
+    <button id="btn2">close dialog</button>
+    
+    <script>
+         document.getElementById("btn2").onclick = function(){
+            document.getElementById("dd").close();
+        }
+        
+    </script>
+    
+</body>
+</html>

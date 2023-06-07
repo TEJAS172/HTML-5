@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA FILE</title>
+    <style>
+        dialog{
+            background-color: rgb(203, 36, 36);
+            color:whitesmoke;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid rgba(255, 0, 0, 0.126);
+
+        }
+        progress{
+            width: 100%;
+            height: 30px;
+        }
+        meter{
+            width: 100%;
+            height: 30px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    
+    <h2>Audio file</h2>
+    <caption>default audio</caption>
+    <audio controls autoplay muted loop src="media/leva-eternity-149473.mp3"></audio>
+    <br><hr><br>
+    <video controls autoplay muted loop src="media/Mere Rashke Qamar Tu Ne Pehli Nazar (UNFAK) Remix By Junaid Asghar.mp4" height="200"></video>
+
+    <br><hr><br>
+    <figure>
+        <input type="image" src="images/cars.jpg.jpg" height="200">
+        <img src="images/cars.jpg.jpg" height="200">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eius dolorem accusamus quasi, amet nisi mollitia libero voluptates officia voluptatibus quis blanditiis? Cumque laudantium ducimus, deleniti illum modi incidunt rem!
+        Sapiente, sit placeat eaque laborum eligendi, dolores, assumenda quas omnis quia culpa praesentium suscipit exercitationem corporis. Culpa qui illo quo amet quasi esse maxime cupiditate modi? Enim et repellendus asperiores?
+        Magnam eveniet perspiciatis repudiandae, qui veritatis animi eos sint et praesentium ducimus, dolores fugit aperiam tenetur, eligendi quis id dolor. Dignissimos odit fugit maiores doloribus fuga in sit commodi recusandae?</p>
+    </figure>
+    <br><hr><br>
+    <select name="" id="">
+        <option>teju</option>
+        <option value="">rash</option>
+        <option value="mnm">mnm</option>
+        <option value="tks">tks</option>
+
+    </select>
+    <br><hr><br>
+    <input type="text" name="bike" id="bike" placeholder="bike" list="bng">
+    <datalist id="bng">
+        <option value="">teju</option>
+        <option>rashmi</option>
+        <option value="mnm">rashmi</option>
+        <option value="tks">teju</option>
+        <option value="beee"></option>
+
+    </datalist>
+    <br>
+   <video controls autoplay muted loop src="media/Mere Rashke Qamar Tu Ne Pehli Nazar (UNFAK) Remix By Junaid Asghar.mp4" height="200"></video>
+   <br><hr><br>
+   <details>
+    <summary>Tejas</summary>
+    <h3>Tejas</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cupiditate voluptatum, iure fugit voluptates sequi doloremque et impedit voluptas beatae possimus explicabo omnis dolorum id debitis dicta ipsam distinctio in!</p>
+   </details>
+   <details>
+    <summary>Rashmi</summary>
+    <h3>Rashmi</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eius ab, unde enim odit laudantium provident distinctio hic eligendi id necessitatibus quisquam inventore? Dolor ipsa accusamus consequatur dolorum nam tenetur.</p>
+   </details>
+   <br>
+   <br>
+   <dialog id="dd">
+    <h3>FULL STACK..</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates dolores laborum voluptatum id recusandae? Tempore minima quos vero dicta, unde exercitationem quam quis cum, ipsum velit maiores molestias ut labore!
+    Unde, accusamus deleniti magni repudiandae ipsum quasi est voluptatibus incidunt accusantium quaerat. Non at, neque ducimus sed fugit esse asperiores pariatur? Qui ea tempore dicta aliquam expedita, quos adipisci omnis. </p>
+   </dialog>
+   <button id="btn1">Dialog open</button>
+   
+   <script>
+    document.getElementById("btn1").onclick = function(){
+        document.getElementById("dd").show();
+    }   
+    
+   </script>
+    <button id="btn2">Dialog close</button>
+   <script>
+    document.getElementById("btn2").onclick = function(){
+        document.getElementById("dd").close();
+    }
+   </script>
+   <br>
+   <br>
+   <details>
+    <summary>MNM</summary>
+    <h3>MNM</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, odio corporis, veniam accusamus at facilis eaque asperiores reiciendis quis, amet eos! Exercitationem quasi, sunt tenetur repellendus rerum laborum delectus iure?</p>
+   </details>
+   <details>
+    <summary>TKS</summary>
+    <h3>TKS</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus inventore, accusantium incidunt doloribus nisi dicta alias quaerat error nam maiores molestiae et asperiores, dolores cupiditate iste? Nihil assumenda atque dolorum?</p>
+   </details>
+   <br>
+   <br>
+   <progress></progress>
+   <br>
+   <progress min="1" max="100" value="50"></progress>
+   <br>
+   <progress min="1" max="100" id="test"></progress>
+   <script>
+    let minVariable=1;
+    function startProgress(){
+        if(minVariable<=100){
+            minVariable++;
+            document.getElementById("test").value = minVariable;
+        }
+    }
+    setInterval("startProgress()",1000 )
+   </script>
+   <br>
+   <br>
+   <svg height="200" width="200" style="border: solid grey">
+    <circle r="80" cx="100" cy="100" fill="grey" stroke="black" stroke-width="5">
+        <text x="100" y="200" fill="white">hloooo</text>
+    </circle>
+
+   </svg>
+   <br>
+   <br>
+   <svg height="100" width="400">
+    <rect height="100" width="200" fill="green" stroke="red" stroke-width="10">
+        hii
+    </rect>
+
+   </svg>
+   <hr>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In voluptatum dicta voluptate culpa officia? At, eveniet! Aliquid cum labore repudiandae, sint quaerat reiciendis. Perferendis cumque corporis nihil et. Rem, tempora?</p>
+   <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quam quas aspernatur quaerat molestiae nostrum facilis eligendi, et laboriosam libero perspiciatis delectus. Architecto, iste ipsa eligendi aperiam quibusdam dolorum laudantium?
+   </p>
+
+   <div>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius assumenda quidem dolor, similique commodi velit cumque, obcaecati porro corrupti dolorum veniam est in nesciunt ex magnam nobis placeat possimus repellat.
+
+   </div>
+   <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, nesciunt numquam commodi voluptas culpa laborum earum inventore maxime aperiam similique non nobis atque corrupti quis laudantium! Natus officia quisquam consequuntur!
+
+   </div>
+
+   
+ 
+  
+
+    
+</body>
+</html>
